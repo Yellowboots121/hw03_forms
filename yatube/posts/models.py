@@ -29,7 +29,8 @@ class Post(models.Model):
         related_name='posts',
         blank=True,
         null=True,
-        on_delete=models.SET_NULL
+        on_delete=models.SET_NULL,
+        help_text='Группа, в которой будет находиться пост'
     )
 
     class Meta:
